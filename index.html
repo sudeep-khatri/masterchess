@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Openings Masterclass - Theory & Strategy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="chess-piece">♔</span>
+                <h1>Chess Openings Masterclass</h1>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#white-openings" class="nav-link">White Openings</a>
+                <a href="#black-openings" class="nav-link">Black Openings</a>
+                <a href="#puzzles" class="nav-link">Puzzles</a>
+                <a href="#tips" class="nav-link">Tips</a>
+                <a href="#about" class="nav-link">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2>Menu</h2>
+            <button class="close-btn" id="closeSidebar">&times;</button>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="#home" class="sidebar-link">Home</a>
+            <a href="#white-openings" class="sidebar-link">White Openings</a>
+            <a href="#black-openings" class="sidebar-link">Black Openings</a>
+            <a href="#puzzles" class="sidebar-link">Puzzles</a>
+            <a href="#tips" class="sidebar-link">Tips</a>
+            <a href="#about" class="sidebar-link">About</a>
+        </nav>
+    </div>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title fade-in">Master Chess Openings</h1>
+            <p class="hero-subtitle fade-in-delay">Explore the theory, strategy, and tactics behind the world's most famous chess openings</p>
+            <div class="hero-buttons fade-in-delay-2">
+                <a href="#white-openings" class="btn btn-primary">White's Openings</a>
+                <a href="#black-openings" class="btn btn-secondary">Black's Openings</a>
+            </div>
+        </div>
+        <div class="hero-board">
+            <div class="chessboard hero-chess" id="heroBoard"></div>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="intro">
+        <div class="container">
+            <div class="intro-content scroll-fade">
+                <h2>Why Opening Theory Matters</h2>
+                <p>The opening is the foundation of your chess game. A solid understanding of opening principles and specific variations can give you a significant advantage over your opponents. This comprehensive guide covers the most important openings for both White and Black, explaining the underlying ideas, key moves, and strategic plans.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- White Openings Section -->
+    <section id="white-openings" class="openings-section white-section">
+        <div class="container">
+            <h2 class="section-title scroll-fade">White's Arsenal</h2>
+            <p class="section-subtitle scroll-fade">Seize the initiative with these powerful opening systems</p>
+
+            <!-- Italian Game -->
+            <div class="opening-card scroll-fade">
+                <div class="opening-header">
+                    <h3>Italian Game (Giuoco Piano)</h3>
+                    <span class="opening-tag">1.e4 e5 2.Nf3 Nc6 3.Bc4</span>
+                </div>
+                <div class="opening-content">
+                    <div class="opening-text">
+                        <h4>Overview</h4>
+                        <p>One of the oldest and most classical openings in chess, the Italian Game aims for rapid development and control of the center. White develops the bishop to c4, targeting Black's vulnerable f7 pawn.</p>
+                        
+                        <h4>Key Ideas</h4>
+                        <ul>
+                            <li><strong>Central Control:</strong> White controls the center with the e4 pawn and supports it with pieces</li>
+                            <li><strong>Rapid Development:</strong> Knights and bishops are developed quickly to active squares</li>
+                            <li><strong>King Safety:</strong> White typically castles kingside early</li>
+                            <li><strong>Attack on f7:</strong> The Bc4 and Nf3 both eye the weak f7 square</li>
+                        </ul>
+
+                        <h4>Main Variations</h4>
+                        <p><strong>Giuoco Piano (3...Bc5):</strong> Both sides mirror each other's development. Play often continues 4.c3 preparing d4, or 4.d3 for a quieter game.</p>
+                        <p><strong>Two Knights Defense (3...Nf6):</strong> Black develops actively but must be careful of 4.Ng5 attacking f7.</p>
+
+                        <h4>Strategic Plans</h4>
+                        <p>White aims to build a strong pawn center with d4, develop all pieces harmoniously, and launch a kingside attack. Common plans include c3 and d4 to establish central dominance, or maintaining the center and attacking on the kingside with moves like Ng5 or h3-g4.</p>
+                    </div>
+                    <div class="opening-board">
+                        <div class="chessboard" id="italianGame"></div>
+                        <div class="board-caption">Italian Game Starting Position</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ruy Lopez -->
+            <div class="opening-card scroll-fade">
+                <div class="opening-header">
+                    <h3>Ruy Lopez (Spanish Opening)</h3>
+                    <span class="opening-tag">1.e4 e5 2.Nf3 Nc6 3.Bb5</span>
+                </div>
+                <div class="opening-content">
+                    <div class="opening-text">
+                        <h4>Overview</h4>
+                        <p>Named after 16th-century Spanish priest Ruy López de Segura, this opening is considered one of the best tries for White to gain an advantage. The Spanish Opening puts immediate pressure on the knight defending e5.</p>
+                        
+                        <h4>Key Ideas</h4>
+                        <ul>
+                            <li><strong>Pressure on e5:</strong> The Bb5 indirectly attacks the e5 pawn by pinning the defender</li>
+                            <li><strong>Long-term Strategy:</strong> Often leads to complex middlegame positions</li>
+                            <li><strong>Flexibility:</strong> White maintains options for both central and flank play</li>
+                            <li><strong>Space Advantage:</strong> White often achieves a spatial advantage</li>
+                        </ul>
+
+                        <h4>Main Variations</h4>
+                        <p><strong>Closed Ruy Lopez (3...a6 4.Ba4 Nf6 5.0-0 Be7 6.Re1 b5 7.Bb3 d6):</strong> The most popular and strategically complex variation. Both sides maneuver for advantage in a rich middlegame.</p>
+                        <p><strong>Berlin Defense (3...Nf6):</strong> Black's solid choice, leading to endgames if 4.0-0 Nxe4 5.d4 Nd6 6.Bxc6 dxc6 7.dxe5 Nf5 8.Qxd8+ Kxd8.</p>
+                        <p><strong>Marshall Attack (8...d5):</strong> A sharp gambit where Black sacrifices a pawn for active piece play.</p>
+
+                        <h4>Strategic Plans</h4>
+                        <p>White typically castles kingside, builds up in the center with moves like c3 and d4, and maintains long-term pressure. The plan often involves the maneuver Nbd2-f1-g3/e3, controlling key squares and supporting a potential d4 break. White can also expand on the queenside or initiate kingside attacks depending on the position.</p>
+                    </div>
+                    <div class="opening-board">
+                        <div class="chessboard" id="ruyLopez"></div>
+                        <div class="board-caption">Ruy Lopez Starting Position</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Queen's Gambit -->
+            <div class="opening-card scroll-fade">
+                <div class="opening-header">
+                    <h3>Queen's Gambit</h3>
+                    <span class="opening-tag">1.d4 d5 2.c4</span>
+                </div>
+                <div class="opening-content">
+                    <div class="opening-text">
+                        <h4>Overview</h4>
+                        <p>One of the oldest known chess openings, the Queen's Gambit offers a pawn to gain central control. Despite the name, it's not a true gambit as Black cannot safely hold the pawn. This opening leads to rich strategic battles.</p>
+                        
+                        <h4>Key Ideas</h4>
+                        <ul>
+                            <li><strong>Central Pressure:</strong> White attacks Black's d5 pawn immediately</li>
+                            <li><strong>Development Advantage:</strong> If Black takes on c4, White gains time developing</li>
+                            <li><strong>Pawn Structure:</strong> White aims for a strong pawn center</li>
+                            <li><strong>Queenside Expansion:</strong> Natural queenside play with the c-pawn already advanced</li>
+                        </ul>
+
+                        <h4>Main Variations</h4>
+                        <p><strong>Queen's Gambit Declined (2...e6):</strong> Black maintains the center but accepts a slightly passive position. Common continuations include 3.Nc3 Nf6 4.Bg5 or 4.Nf3.</p>
+                        <p><strong>Queen's Gambit Accepted (2...dxc4):</strong> Black takes the pawn but White regains it easily with 3.Nf3 Nf6 4.e3 and later develops the bishop to recapture.</p>
+                        <p><strong>Slav Defense (2...c6):</strong> Black supports d5 while keeping the c8 bishop free, though at the cost of hemming in the queenside development.</p>
+
+                        <h4>Strategic Plans</h4>
+                        <p>White typically develops with Nc3, Nf3, and develops bishops actively. After establishing the center, White can expand on the queenside with b4 or in the center with e4. The minority attack (b4-b5) is a classic plan against the QGD, aiming to create weaknesses in Black's pawn structure.</p>
+                    </div>
+                    <div class="opening-board">
+                        <div class="chessboard" id="queensGambit"></div>
+                        <div class="board-caption">Queen's Gambit Starting Position</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- London System -->
+            <div class="opening-card scroll-fade">
+                <div class="opening-header">
+                    <h3>London System</h3>
+                    <span class="opening-tag">1.d4 d5 2.Bf4</span>
+                </div>
+                <div class="opening-content">
+                    <div class="opening-text">
+                        <h4>Overview</h4>
+                        <p>A solid and systematic opening that can be employed against virtually any Black setup. The London System has gained immense popularity at all levels, from beginners to world champions, due to its reliability and straightforward plans.</p>
+                        
+                        <h4>Key Ideas</h4>
+                        <ul>
+                            <li><strong>Early Bf4:</strong> Develop the bishop outside the pawn chain before playing e3</li>
+                            <li><strong>Solid Structure:</strong> Create a rock-solid pawn formation with pawns on d4, e3, and c3</li>
+                            <li><strong>Systematic Development:</strong> Follow a clear development plan regardless of Black's setup</li>
+                            <li><strong>Kingside Attack:</strong> Often aim for a minority attack or kingside expansion with h3, g4</li>
+                        </ul>
+
+                        <h4>Main Variations</h4>
+                        <p><strong>Standard London:</strong> Follows with 3.e3, 4.Nf3, 5.Bd3, 6.Nbd2, creating a pyramid structure that's difficult to break.</p>
+                        <p><strong>Jobava London (2.Bf4 Nf6 3.Nc3):</strong> A more aggressive approach avoiding e3 and looking for faster development and central breaks.</p>
+
+                        <h4>Strategic Plans</h4>
+                        <p>White completes development with Nf3, e3, Bd3, Nbd2, and castles kingside. The typical plan involves building up on the kingside with h3, Ne5, and potentially f4 or g4 for an attack. Alternatively, White can play solidly in the center and exploit small advantages. The bishop on f4 controls key central squares and supports both defensive and offensive plans.</p>
+                    </div>
+                    <div class="opening-board">
+                        <div class="chessboard" id="londonSystem"></div>
+                        <div class="board-caption">London System Setup</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Black Openings Section -->
+    <section id="black-openings" class="openings-section black-section">
+        <div class="container">
+            <h2 class="section-title scroll-fade">Black's Defense Arsenal</h2>
+            <p class="section-subtitle scroll-fade">Fight for equality and counterattacking chances</p>
+
+            <!-- Sicilian Defense -->
+            <div class="opening-card scroll-fade">
+                <div class="opening-header">
+                    <h3>Sicilian Defense</h3>
+                    <span class="opening-tag">1.e4 c5</span>
+                </div>
+                <div class="opening-content">
+                    <div class="opening-text">
+                        <h4>Overview</h4>
+                        <p>The most popular and statistically most successful response to 1.e4, the Sicilian Defense creates immediate asymmetry and fights for the initiative. It's the choice of fighters who play for a win with the black pieces.</p>
+                        
+                        <h4>Key Ideas</h4>
+                        <ul>
+                            <li><strong>Asymmetry:</strong> Creates an unbalanced position from move one</li>
+                            <li><strong>Central Control:</strong> Controls d4 and prepares ...d5 or ...d6 + ...e5</li>
+                            <li><strong>Queenside Majority:</strong> After d4 cxd4, Black gets a 2-1 pawn majority on the queenside</li>
+                            <li><strong>Active Counterplay:</strong> Black often plays actively rather than passively defending</li>
+                        </ul>
+
+                        <h4>Main Variations</h4>
+                        <p><strong>Najdorf (2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6):</strong> The sharpest and most theoretical variation, favored by Fischer and Kasparov. Extremely complex with chances for both sides.</p>
+                        <p><strong>Dragon (5...g6):</strong> Black fianchettoes the kingside bishop, creating sharp tactical battles. The Yugoslav Attack (6.Be3 Bg7 7.f3 0-0 8.Qd2) leads to opposite-side castling and mutual attacks.</p>
+                        <p><strong>Classical (5...Nc6):</strong> Solid and straightforward development. Less tactical than Najdorf or Dragon but perfectly sound.</p>
+                        <p><strong>Sveshnikov (5...e5):</strong> Creates a backward d6 pawn but gains active piece play and control of key squares.</p>
+
+                        <h4>Strategic Plans</h4>
+                        <p>Black typically aims for active piece play and queenside counterplay with ...b5-b4 or ...Rc8 and pressure on the c-file. The central break ...d5 is often a key strategic goal. Black must balance development, king safety, and creating counterplay, as passive defense usually leads to trouble in the Sicilian.</p>
+                    </div>
+                    <div class="opening-board">
+                        <div class="chessboard" id="sicilianDefense"></div>
+                        <div class="board-caption">Sicilian Defense Starting Position</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- French Defense -->
+            <div class="opening-card scroll-fade">
+                <div class="opening-header">
+                    <h3>French Defense</h3>
+                    <span class="opening-tag">1.e4 e6</span>
+                </div>
+                <div class="opening-content">
+                    <div class="opening-text">
+                        <h4>Overview</h4>
+                        <p>A solid and strategic defense that allows Black to fight for central control with ...d5. The French leads to highly structured positions where both sides have clear plans. It's a favorite of positional players who enjoy maneuvering and strategic complexity.</p>
+                        
+                        <h4>Key Ideas</h4>
+                        <ul>
+                            <li><strong>Central Challenge:</strong> Challenge White's e4 pawn with ...d5</li>
+                            <li><strong>Pawn Chain:</strong> Often leads to locked pawn chains requiring piece maneuvering</li>
+                            <li><strong>Bishop Problem:</strong> The c8 bishop is often restricted by the e6 pawn</li>
+                            <li><strong>Counterplay:</strong> Black generates play on the queenside or against White's center</li>
+                        </ul>
+
+                        <h4>Main Variations</h4>
+                        <p><strong>Winawer (3.Nc3 Bb4):</strong> The sharpest line, pinning the knight and threatening to damage White's structure with ...Bxc3. Leads to complex strategic battles.</p>
+                        <p><strong>Classical (3.Nc3 Nf6):</strong> Solid development, often continuing with 4.Bg5. Black must deal with the pin but gets good piece coordination.</p>
+                        <p><strong>Tarrasch (3.Nd2):</strong> White avoids the pin but develops less actively. Black gets comfortable equality with proper play.</p>
+                        <p><strong>Advance (3.e5):</strong> Creates a space advantage but also gives Black clear targets to attack with ...c5 and ...f6.</p>
+
+                        <h4>Strategic Plans</h4>
+                        <p>Black typically plays ...c5 to challenge the center, develops the light-squared bishop (often to d7 or b7), and creates queenside play with ...Qb6 or ...cxd4 followed by ...Qc7 and ...Nc6-a5. The key is to solve the problem of the bad bishop on c8 while creating counterplay. In many lines, Black sacrifices space for active piece play and attacking chances.</p>
+                    </div>
+                    <div class="opening-board">
+                        <div class="chessboard" id="frenchDefense"></div>
+                        <div class="board-caption">French Defense Starting Position</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Caro-Kann Defense -->
+            <div class="opening-card scroll-fade">
+                <div class="opening-header">
+                    <h3>Caro-Kann Defense</h3>
+                    <span class="opening-tag">1.e4 c6</span>
+                </div>
+                <div class="opening-content">
+                    <div class="opening-text">
+                        <h4>Overview</h4>
+                        <p>A rock-solid defense that combines strategic soundness with dynamic possibilities. The Caro-Kann prepares ...d5 while keeping the c8 bishop free, addressing the main drawback of the French Defense. It's favored by players seeking reliable positions with Black.</p>
+                        
+                        <h4>Key Ideas</h4>
+                        <ul>
+                            <li><strong>Support for d5:</strong> The c6 pawn supports a future ...d5 advance</li>
+                            <li><strong>Free Bishop:</strong> Unlike the French, the c8 bishop isn't blocked</li>
+                            <li><strong>Solid Structure:</strong> Creates a stable pawn formation</li>
+                            <li><strong>Less Space:</strong> Black accepts slightly less space for piece activity</li>
+                        </ul>
+
+                        <h4>Main Variations</h4>
+                        <p><strong>Classical (3.Nc3 dxe4 4.Nxe4 Bf5):</strong> Black develops the bishop actively before playing ...e6. Leads to balanced positions with good piece coordination.</p>
+                        <p><strong>Advance (3.e5):</strong> White grabs space, Black undermines with ...c5 and ...Bf5. Similar structure to French Advance but Black's bishop is outside the pawn chain.</p>
+                        <p><strong>Exchange (3.exd5 cxd5):</strong> Symmetrical pawn structure, often leading to drawish positions but Black can still fight for advantage.</p>
+                        <p><strong>Panov-Botvinnik (3.exd5 cxd5 4.c4):</strong> White tries to prove the isolated queen's pawn gives compensation. Sharp and tactical.</p>
+
+                        <h4>Strategic Plans</h4>
+                        <p>Black typically develops with ...Bf5, ...e6, ...Nd7, ...Ngf6, creating a solid setup. The main strategic ideas include controlling the center, completing development smoothly, and creating slow pressure. Black often plays for the ...c5 or ...e5 breaks to open the position when favorable. The defense is known for being difficult to crack and giving Black good practical chances.</p>
+                    </div>
+                    <div class="opening-board">
+                        <div class="chessboard" id="caroKann"></div>
+                        <div class="board-caption">Caro-Kann Defense Starting Position</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- King's Indian Defense -->
+            <div class="opening-card scroll-fade">
+                <div class="opening-header">
+                    <h3>King's Indian Defense</h3>
+                    <span class="opening-tag">1.d4 Nf6 2.c4 g6</span>
+                </div>
+                <div class="opening-content">
+                    <div class="opening-text">
+                        <h4>Overview</h4>
+                        <p>One of the most dynamic and aggressive defenses against 1.d4, the King's Indian allows White to build a large pawn center before launching a fierce counterattack. It's a favorite of attacking players who thrive in sharp, unbalanced positions.</p>
+                        
+                        <h4>Key Ideas</h4>
+                        <ul>
+                            <li><strong>Fianchetto:</strong> Black fianchettoes the kingside bishop for long-term pressure</li>
+                            <li><strong>Central Counterplay:</strong> Allow White the center, then strike back with ...e5 or ...c5</li>
+                            <li><strong>Kingside Attack:</strong> Often launch a fierce attack with ...f5, ...g5-g4</li>
+                            <li><strong>Dynamic Imbalance:</strong> Accept spatial disadvantage for active piece play</li>
+                        </ul>
+
+                        <h4>Main Variations</h4>
+                        <p><strong>Classical (3.Nc3 Bg7 4.e4 d6 5.Nf3 0-0 6.Be2 e5):</strong> The main line, where Black challenges the center immediately. White can choose between 7.0-0, 7.d5, or 7.dxe5 with different character.</p>
+                        <p><strong>Sämisch (6.Be3):</strong> White supports the center and prevents Black's freeing moves. Black must play energetically with ...e5 and kingside expansion.</p>
+                        <p><strong>Four Pawns Attack (5.f4):</strong> Ultra-aggressive from White. Black must counterattack precisely with ...c5 or ...e5.</p>
+                        <p><strong>Averbakh (5.Be2 0-0 6.Bg5):</strong> White develops naturally and puts pressure on d6 and the center.</p>
+
+                        <h4>Strategic Plans</h4>
+                        <p>After the typical setup with ...Bg7, ...0-0, ...d6, Black plays ...e5 or ...c5 to challenge the center. The most forcing plan involves ...f5, attacking White's e4 pawn and preparing a kingside pawn storm with ...g5-g4. Black often sacrifices material for the attack. The Bg7 becomes a powerful piece on the long diagonal. King's Indian positions are highly complex, requiring precise calculation and courage.</p>
+                    </div>
+                    <div class="opening-board">
+                        <div class="chessboard" id="kingsIndian"></div>
+                        <div class="board-caption">King's Indian Defense Setup</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chess Puzzles Section -->
+    <section id="puzzles" class="puzzles-section">
+        <div class="container">
+            <h2 class="section-title scroll-fade">Chess Puzzles</h2>
+            <p class="section-subtitle scroll-fade">Sharpen your tactical skills with over 100 challenging positions</p>
+            
+            <div class="locked-message scroll-fade">
+                <div class="lock-icon">🔒</div>
+                <h3>It's locked for now. Coming soon!</h3>
+                <p>We're curating a collection of hand-verified tactical puzzles. Check back soon for challenging positions to solve.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chess Tips Section -->
+    <section id="tips" class="tips-section">
+        <div class="container">
+            <h2 class="section-title scroll-fade">Master Chess: 60 Essential Tips</h2>
+            <p class="section-subtitle scroll-fade">Improve your position, style, and rating with proven strategies</p>
+            
+            <div class="tips-categories">
+                <div class="tip-category scroll-fade">
+                    <h3><span class="category-icon">♔</span> Opening Principles (Tips 1-12)</h3>
+                    <div class="tips-list" id="openingTips"></div>
+                </div>
+
+                <div class="tip-category scroll-fade">
+                    <h3><span class="category-icon">⚔️</span> Middlegame Strategy (Tips 13-30)</h3>
+                    <div class="tips-list" id="middlegameTips"></div>
+                </div>
+
+                <div class="tip-category scroll-fade">
+                    <h3><span class="category-icon">👑</span> Endgame Mastery (Tips 31-42)</h3>
+                    <div class="tips-list" id="endgameTips"></div>
+                </div>
+
+                <div class="tip-category scroll-fade">
+                    <h3><span class="category-icon">🧠</span> Tactical Awareness (Tips 43-54)</h3>
+                    <div class="tips-list" id="tacticalTips"></div>
+                </div>
+
+                <div class="tip-category scroll-fade">
+                    <h3><span class="category-icon">📈</span> Rating Improvement (Tips 55-60)</h3>
+                    <div class="tips-list" id="ratingTips"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content scroll-fade">
+                <h2>About This Guide</h2>
+                <p>This comprehensive guide to chess openings is designed for players of all levels, from beginners looking to understand fundamental opening principles to advanced players seeking to deepen their theoretical knowledge.</p>
+                <p>Each opening is presented with clear explanations of the underlying strategic ideas, key variations, and typical plans for both sides. The visual board representations help you understand the positions and remember the key moves.</p>
+                <p>Chess is a game of infinite complexity and beauty. Master these openings, and you'll have a solid foundation for success in your games.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Chess Openings Masterclass. All rights reserved.</p>
+            <p>Study hard, play well, and may your pieces always find their best squares.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="tips-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
