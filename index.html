@@ -49,16 +49,64 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title fade-in">Master Chess Openings</h1>
-            <p class="hero-subtitle fade-in-delay">Explore the theory, strategy, and tactics behind the world's most famous chess openings</p>
-            <div class="hero-buttons fade-in-delay-2">
-                <a href="#white-openings" class="btn btn-primary">White's Openings</a>
-                <a href="#black-openings" class="btn btn-secondary">Black's Openings</a>
+        <div class="particles-container" id="particles"></div>
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="floating-badge">
+                    <span class="badge-icon">♔</span>
+                    <span class="badge-text">Premium Chess Education</span>
+                </div>
+                <h1 class="hero-title fade-in">
+                    <span class="title-line">Master Chess</span>
+                    <span class="title-line gradient-text">Openings</span>
+                </h1>
+                <p class="hero-subtitle fade-in-delay">Explore the theory, strategy, and tactics behind the world's most famous chess openings</p>
+                <div class="hero-stats fade-in-delay">
+                    <div class="stat-item">
+                        <div class="stat-number">8</div>
+                        <div class="stat-label">Openings</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">60+</div>
+                        <div class="stat-label">Pro Tips</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">∞</div>
+                        <div class="stat-label">Possibilities</div>
+                    </div>
+                </div>
+                <div class="hero-buttons fade-in-delay-2">
+                    <a href="#white-openings" class="btn btn-primary btn-3d">
+                        <span class="btn-content">
+                            <span class="btn-icon">♔</span>
+                            White's Openings
+                        </span>
+                    </a>
+                    <a href="#black-openings" class="btn btn-secondary btn-3d">
+                        <span class="btn-content">
+                            <span class="btn-icon">♚</span>
+                            Black's Openings
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-board">
+                <div class="board-wrapper">
+                    <div class="board-glow"></div>
+                    <div class="chessboard hero-chess" id="heroBoard"></div>
+                </div>
             </div>
         </div>
-        <div class="hero-board">
-            <div class="chessboard hero-chess" id="heroBoard"></div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll to explore</p>
         </div>
     </section>
 

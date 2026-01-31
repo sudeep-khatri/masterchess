@@ -563,4 +563,87 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
+// Create particles animation
+function createParticles() {
+    const particlesContainer = document.getElementById('particles');
+    if (!particlesContainer) return;
+    
+    const particleCount = 50;
+    
+    for (let i = 0; i < particleCount; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+        
+        const size = Math.random() * 4 + 2;
+        const startX = Math.random() * 100;
+        const duration = Math.random() * 10 + 10;
+        const delay = Math.random() * 5;
+        
+        particle.style.width = `${size}px`;
+        particle.style.height = `${size}px`;
+        particle.style.left = `${startX}%`;
+        particle.style.animationDuration = `${duration}s`;
+        particle.style.animationDelay = `${delay}s`;
+        
+        particlesContainer.appendChild(particle);
+    }
+}
+
+// Add 3D tilt effect to hero board
+function add3DTilt() {
+    const boardWrapper = document.querySelector('.board-wrapper');
+    if (!boardWrapper) return;
+    
+    boardWrapper.addEventListener('mousemove', (e) => {
+        const rect = boardWrapper.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        
+        const rotateX = (y - centerY) / 20;
+        const rotateY = (centerX - x) / 20;
+        
+        boardWrapper.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+    });
+    
+    boardWrapper.addEventListener('mouseleave', () => {
+        boardWrapper.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
+    });
+}
+
+// Enhanced button interactions
+function enhanceButtons() {
+    const buttons = document.querySelectorAll('.btn-3d');
+    
+    buttons.forEach(btn => {
+        btn.addEventListener('mousemove', (e) => {
+            const rect = btn.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            
+            const rotateX = (y - centerY) / 10;
+            const rotateY = (centerX - x) / 10;
+            
+            btn.style.transform = `perspective(500px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px) scale(1.02)`;
+        });
+        
+        btn.addEventListener('mouseleave', () => {
+            btn.style.transform = 'perspective(500px) rotateX(0) rotateY(0) translateY(0) scale(1)';
+        });
+    });
+}
+
+// Initialize all enhancements
+document.addEventListener('DOMContentLoaded', () => {
+    createParticles();
+    add3DTilt();
+    enhanceButtons();
+});
+
 console.log('Chess Openings Masterclass loaded successfully! ♔');
+
